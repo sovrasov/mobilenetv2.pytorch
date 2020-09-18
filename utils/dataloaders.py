@@ -15,6 +15,9 @@ try:
 except ImportError:
     print("Please install DALI from https://www.github.com/NVIDIA/DALI to run this example.")
 
+class Pipeline:
+	pass
+
 
 class HybridTrainPipe(Pipeline):
     def __init__(self, batch_size, num_threads, device_id, data_dir, crop, dali_cpu=False):
